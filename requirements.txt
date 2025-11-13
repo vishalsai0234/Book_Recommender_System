@@ -1,0 +1,21 @@
+# Core Python Libraries
+numpy
+pandas
+scikit-learn
+matplotlib
+
+# Web Framework
+streamlit
+
+# Text Processing (TF-IDF, tokenization)
+nltk
+
+# For Notebook Execution
+jupyter
+ipykernel
+
+# For visualizing and debugging
+seaborn
+
+# Deployment / App Enhancements
+python-dotenv
