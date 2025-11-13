@@ -36,14 +36,14 @@ The dataset includes:
 Data preprocessing is performed using **pandas** and **numpy**, and stored as **pickle files** for efficient access.
 
 ---
-## 📁 Project Structure
+## 📁 File Structure
 
-Book-Recommender-System/
-│
-├── README.md
-├── requirements.txt
-├── Book_Recommender.ipynb
-└── app.py
+- `Book_Recommender.ipynb`: Main notebook: data cleaning, EDA, building CF, CBF, and Hybrid recommendation models.
+- `app.py`: Streamlit application script that loads the trained model and related objects for inference and user interaction.
+- `tfidf_vectorizer.pkl`: Serialized TF-IDF vectorizer.
+- `labelencoder.pkl`: Serialized Label Encoder for sentiment classes.
+- `sentiment_model_inference.h5`: Saved Keras neural network model for sentiment prediction.
+- `requirements.txt`: Python packages dependencies for environment setup.
 
 
 ---
@@ -100,7 +100,23 @@ The system consists of four main stages:
 ✅ Demonstration of AI integration in digital libraries.  
 
 ---
+## 📁 Required Data Files
 
+### 🔹 For running the Jupyter Notebook (*Book_Recommender.ipynb*):
+- `Books.csv`
+- `Ratings.csv`
+- `Users.csv`
+These raw CSV files contain book metadata, user ratings, and user demographic information.
+
+### 🔹 After running the Notebook (*Required for Streamlit*):
+- `popular.pkl`: Saved Keras neural network model for sentiment prediction.
+- `pt.pkl`: Python packages dependencies for environment setup.
+- `books.pkl`
+- `similarity scores.pkl`
+• 
+These files contain metadata, pivot matrices, and similarity scores models.
+
+---
 
 ## 📬 How to Run
 
