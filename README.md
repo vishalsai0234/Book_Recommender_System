@@ -100,6 +100,7 @@ The system consists of four main stages:
 - `Books.csv`
 - `Ratings.csv`
 - `Users.csv`
+
 These raw CSV files contain book metadata, user ratings, and user demographic information.
 
 ### 🔹 After running the Notebook (*Required for Streamlit*):
@@ -107,6 +108,7 @@ These raw CSV files contain book metadata, user ratings, and user demographic in
 - `pt.pkl`
 - `books.pkl`
 - `similarity scores.pkl`
+
 These files contain popularity, pivot matrices, metadata, and similarity scores models.
 
 ---
