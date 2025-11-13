@@ -7,9 +7,7 @@ The project suggests personalized books to users based on their preferences and 
 
 ## 🧠 Project Overview
 With millions of books available online, finding the right one can be overwhelming.  
-This system intelligently recommends books by learning from user behavior and book metadata, making book discovery faster, easier, and more enjoyable.  
-
-The project demonstrates how **AI** and **Data Analytics** can be applied to digital reading platforms and online libraries.
+This system intelligently recommends books by learning from user behavior and book metadata, making book discovery faster, easier, and more enjoyable.
 
 ---
 
@@ -18,7 +16,7 @@ The project demonstrates how **AI** and **Data Analytics** can be applied to dig
 - Suggest relevant books based on user interests and ratings.  
 - Combine collaborative and content-based methods for higher accuracy.  
 - Build a hybrid model to overcome the cold-start problem.  
-- Deploy as an interactive web application using **Flask** or **Streamlit**.
+- Deploy as an interactive web application using **Streamlit**.
 
 ---
 
@@ -40,11 +38,7 @@ Data preprocessing is performed using **pandas** and **numpy**, and stored as **
 
 - `Book_Recommender.ipynb`: Main notebook: data cleaning, EDA, building CF, CBF, and Hybrid recommendation models.
 - `app.py`: Streamlit application script that loads the trained model and related objects for inference and user interaction.
-- `tfidf_vectorizer.pkl`: Serialized TF-IDF vectorizer.
-- `labelencoder.pkl`: Serialized Label Encoder for sentiment classes.
-- `sentiment_model_inference.h5`: Saved Keras neural network model for sentiment prediction.
 - `requirements.txt`: Python packages dependencies for environment setup.
-
 
 ---
 ## 🧩 Methodology
@@ -76,7 +70,7 @@ The system consists of four main stages:
 - User feedback to validate recommendation quality.
 
 ### 4️⃣ Deployment
-- Real-time web app built using **Flask** or **Streamlit**.  
+- Real-time web app built using **Streamlit**.  
 - User inputs a book title → receives a list of similar recommended books.  
 
 ---
@@ -87,8 +81,8 @@ The system consists of four main stages:
 | Programming | Python |
 | Data Handling | pandas, numpy |
 | Machine Learning | scikit-learn |
-| Web Framework | Flask / Streamlit |
-| Visualization | matplotlib |
+| Web Framework | Streamlit |
+| Visualization | matplotlib, seaborn |
 | Others | pickle, cosine similarity, TF-IDF |
 
 ---
@@ -109,12 +103,11 @@ The system consists of four main stages:
 These raw CSV files contain book metadata, user ratings, and user demographic information.
 
 ### 🔹 After running the Notebook (*Required for Streamlit*):
-- `popular.pkl`: Saved Keras neural network model for sentiment prediction.
-- `pt.pkl`: Python packages dependencies for environment setup.
+- `popular.pkl`
+- `pt.pkl`
 - `books.pkl`
 - `similarity scores.pkl`
-• 
-These files contain metadata, pivot matrices, and similarity scores models.
+These files contain popularity, pivot matrices, metadata, and similarity scores models.
 
 ---
 
@@ -131,7 +124,7 @@ pip install -r requirements.txt
 ```
 
 ### 🔹 Run the recommender system:
-If using *Streamlit*:
+Using *Streamlit*:
 ```bash
 streamlit run app.py
 ```
